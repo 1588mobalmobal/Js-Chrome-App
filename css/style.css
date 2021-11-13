@@ -1,3 +1,162 @@
+@import "reset.css";
+
+body {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -100;
+  opacity: 1;
+  filter: blur(1px);
+}
+
+.clock {
+  font-size: 100px;
+  margin: 250px 0px 50px 0px;
+  font-weight: 500;
+  color: azure;
+  text-shadow: 0 0 10px black;
+}
+
+.login-form {
+  width: 800px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.login-form input {
+  top: 0;
+  right: 200px;
+}
+
+.login-form button {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+
+.greeting {
+  font-size: 50px;
+  font-weight: 600;
+  color: azure;
+  text-shadow: 0 0 10px black;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.todo-form {
+  width: 900px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.quote {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.quote span {
+  color: azure;
+  text-shadow: 0 0 10px black;
+}
+.quote span:last-child {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.todo-list li {
+  padding: 12px 12px;
+  margin: 12px 0px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.todo-list li span {
+  width: 450px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list li button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: rgb(163, 163, 163);
+}
+
+.weather {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.weather span {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: azure;
+  text-shadow: 0 0 10px black;
+}
+
 .hidden {
   display: none;
 }
