@@ -28,10 +28,12 @@ img {
 
 .login-form {
   width: 800px;
-  height: 50px;
+  height: 170px;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
+  padding: 5px 0px;
 }
 
 input {
@@ -47,6 +49,7 @@ input {
 input:focus {
   outline: none;
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 input::placeholder {
@@ -57,14 +60,21 @@ input::placeholder {
 .login-form input {
   top: 0;
   right: 200px;
+  top: 50px;
 }
 
 .login-form button {
-  width: 100px;
+  width: 80px;
   height: 50px;
   position: absolute;
   top: 0;
-  right: 80px;
+  right: 110px;
+  top: 52px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255);
+  border-radius: 5px;
 }
 
 .greeting {
